@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RestaurantApp::Application.config.secret_key_base = '83950109132568fbd543530b91253eececd01a94dfc85b681a86c577d3484537c8688efb674b6c6dc24a907f1ca94a7778a0d97c7d75ffc5e4071e4107ec16c5'
+Restaurant::Application.config.secret_key_base = '705375e3ae3d2e2f080601b58656c3afb7c610b082683069d06a68a9127817ee5314d69fd8dec52fda108a38f13bec412255392e1fb0d4087620bdf687922665'

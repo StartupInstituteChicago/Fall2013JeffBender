@@ -1,37 +1,27 @@
-RestaurantApp::Application.routes.draw do
+Restaurant::Application.routes.draw do
   
-    #verb url => controller#action
-    get "/" => 'tables#welcome'
-    get "/tables" => 'tables#index'
-    get "/tables/:id" => 'tables#show'
-    
-  
-  
-  
-  
-  
-  
-  
-  # Tority is based upon order of creation: first created -> highest priority.
-  # S all your routes lay out with "rake routes".
-     
-  # Y have the root of your site routed with "root"
-  # relcome#index'
-     
-  # E of regular route:
-  #  products/:id' => 'catalog#view'
-     
-  # E of named route that can be invoked with purchase_url(id: product.id)
-  #  products/:id/purchase' => 'catalog#purchase', as: :purchase
-     
-  # E resource route (maps HTTP verbs to controller actions automatically):
-  #  rces :products
-     
-  # E resource route with options:
-  #  rces :products do
-  #  ber do
-  #  et 'short'
-  #  ost 'toggle'
+  resources :restaurant
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  # You can have the root of your site routed with "root"
+  root to: 'restaurant#index'
+end
+
+  # Example of regular route:
+  #   get 'products/:id' => 'catalog#view'
+
+  # Example of named route that can be invoked with purchase_url(id: product.id)
+  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+
+  # Example resource route (maps HTTP verbs to controller actions automatically):
+  #   resources :products
+
+  # Example resource route with options:
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
   #     end
   #
   #     collection do
