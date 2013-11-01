@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Restaurant::Application.config.session_store :cookie_store, key: '_restaurant_session'
+Fall2013JeffBender::Application.config.session_store :cookie_store, key: '_Fall2013JeffBender_session'
