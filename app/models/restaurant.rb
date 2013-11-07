@@ -3,4 +3,5 @@ class Restaurant < ActiveRecord::Base
   # attr_accessible :restaurant_id, :name, :image
   # belongs_to :restaurant
   mount_uploader :image, ImageUploader
+  mount_uploader :menu, MenuUploader
 end

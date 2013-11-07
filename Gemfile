@@ -20,9 +20,15 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'less-rails'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
+
 #gem 'protected_attributes'
 
 gem 'carrierwave'
+
+gem 'devise'
 
 gem 'rmagick'
 
