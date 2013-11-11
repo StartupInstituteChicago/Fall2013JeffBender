@@ -26,9 +26,17 @@ end
 
 #gem 'protected_attributes'
 
+gem 'unf'
+
 gem 'carrierwave'
 
+gem 'carrierwave_direct'
+
+gem 'sidekiq'
+
 gem 'devise'
+
+gem 'fog'
 
 gem 'rmagick'
 

@@ -1,4 +1,4 @@
-<p>
+<p> <%= image_tag @restaurant.menu_url %>
 	<%#= image_tag restaurant.image_url.to_s %>
 	<%= image_tag @restaurant.image_url(:masthead) %>
 	<strong>Restaurant</strong>
@@ -21,6 +21,5 @@
 </p>
 
 <%= link_to 'Menu', @restaurant.menu_url %>
-
 <%= link_to 'Back', restaurants_path %>	
-	<%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
