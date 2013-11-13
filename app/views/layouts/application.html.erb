@@ -18,6 +18,9 @@
 	</div>
 	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>	
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
+    <% end %>
 <div id="owner_nav"
     <% if owner_signed_in? %>
   Logged in as <strong><%= current_owner.email %></strong>.

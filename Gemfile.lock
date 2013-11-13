@@ -61,6 +61,11 @@ GEM
     erubis (2.7.0)
     excon (0.28.0)
     execjs (2.0.2)
+    factory_girl (4.3.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
+      railties (>= 3.0.0)
     fog (1.18.0)
       builder
       excon (~> 0.28.0)
@@ -199,6 +204,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   dotenv-rails
+  factory_girl_rails (~> 4.0)
   fog
   jbuilder (~> 1.2)
   jquery-rails

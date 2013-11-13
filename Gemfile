@@ -34,6 +34,8 @@ gem 'carrierwave_direct'
 
 gem 'sidekiq'
 
+gem 'factory_girl_rails', "~> 4.0"
+
 gem 'devise'
 
 gem 'fog'

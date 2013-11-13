@@ -11,12 +11,12 @@ describe RestaurantsController do
 			get :index
 			response.should render_template :index
 		end
-		# it "should show all restaurants" do
-		# 	restaurant1 = restaurant: {name: "Jeff restaurant", description: "Hella good"}
-		# 	restaurant2 = restaurant: {name: "Brian restaurant", description: "Not too good"} 
-		# 	get :index
-		# 	expect(assigns(:restaurants)).to eq([restaurant1, restaurant2])
-		# end
+		it "should show all restaurants" do
+			restaurant1 = FactoryGirl.create (:restaurant)
+			restaurant2 = FactoryGirl.create (:restaurant)
+			get :index
+			expect(assigns(:restaurants)).to eq([restaurant1, restaurant2])
+		end
 	end
 
 	describe "GET #new" do
